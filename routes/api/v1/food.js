@@ -50,16 +50,16 @@ router.get('/events/:id', async (request, response) => {
 //post menu endpoint
 router.post('/menu', async (request, response) => {
     const { number, name, type } = request.body
-    const collection = await getPokemon()
-    const { acknowledged, insertedId } = await collection.insertOne({ number, name, type })
+    const collection = await getMenu()
+    const { acknowledged, insertedId } = await collection.insertOne({ name, description, price, img })
     response.send({ acknowledged, insertedId })
 })
 
 //post event endpoint
 router.post('/events', async (request, response) => {
     const { number, name, type } = request.body
-    const collection = await getPokemon()
-    const { acknowledged, insertedId } = await collection.insertOne({ number, name, type })
+    const collection = await getEvents()
+    const { acknowledged, insertedId } = await collection.insertOne({ name, location, date, time })
     response.send({ acknowledged, insertedId })
 })
 
