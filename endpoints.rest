@@ -1,0 +1,40 @@
+### Variables
+@url = http://localhost:3000/api/v1
+
+@menuID = 68069253541ba818891f08c6
+
+@eventID = 680694ad541ba818891f08cc
+
+### All menu items
+GET {{url}}/menu
+
+### All events
+GET {{url}}/events
+
+### Menu by ID
+GET {{url}}/menu/{{menuID}}
+
+### Event by ID
+GET {{url}}/event/{{eventID}}
+
+### Add menu item
+POST {{url}}/menu
+Content-Type: application/json
+
+{
+    "name": "Mini Fajitas",
+    "description": "Three mini fajitas.",
+    "price": "$3.50",
+    "img": "https://www.pexels.com/photo/close-up-of-woman-holding-tacos-14866630/"
+}
+
+### Add event
+POST {{url}}/menu
+Content-Type: application/json
+
+{
+    "name": "Family Squirt Gun Challenge",
+    "location": "Wrightstown, WI",
+    "date": "6/4/2026",
+    "time": "2:00pm"
+}
