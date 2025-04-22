@@ -15,7 +15,7 @@ GET {{url}}/events
 GET {{url}}/menu/{{menuID}}
 
 ### Event by ID
-GET {{url}}/event/{{eventID}}
+GET {{url}}/events/{{eventID}}
 
 ### Add menu item
 POST {{url}}/menu

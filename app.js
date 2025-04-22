@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 // API endpoints
-app.use('/api/v1/food', require('./routes/api/v1/food'))
+app.use('/api/v1/', require('./routes/api/v1/food'))
 app.use(require('./routes/static'))
 
 app.listen(port, () => console.log(`https://localhost:${port}/`))
