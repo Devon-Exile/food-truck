@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ### Add event
-POST {{url}}/menu
+POST {{url}}/events
 Content-Type: application/json
 
 {
