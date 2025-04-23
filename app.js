@@ -12,4 +12,4 @@ app.use(express.static('public'))
 app.use('/api/v1/', require('./routes/api/v1/food'))
 app.use(require('./routes/static'))
 
-app.listen(port, () => console.log(`https://localhost:${port}/`))
+app.listen(port, () => console.log(`http://localhost:${port}/`))
