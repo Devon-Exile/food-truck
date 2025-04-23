@@ -27,7 +27,7 @@ Content-Type: application/json
     "name": "Mini Fajitas",
     "description": "Three mini fajitas.",
     "price": "$3.50",
-    "img": "https://www.pexels.com/photo/close-up-of-woman-holding-tacos-14866630/"
+    "img": "https://images.pexels.com/photos/14866630/pexels-photo-14866630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 }
 
 ### Add event
