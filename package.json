@@ -7,10 +7,19 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0",
     "mongodb": "^6.15.0",
     "mongoose": "^8.13.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devon-Exile/food-truck.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Devon-Exile/food-truck/issues"
+  },
+  "homepage": "https://github.com/Devon-Exile/food-truck#readme",
+  "description": ""
 }
