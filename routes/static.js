@@ -1,12 +1,15 @@
-// FRONT END
-// Endpoints send to index and by extension site.js for logic
 const path = require('path')
 const router = require('express').Router()
-
 const root = path.join(__dirname, '..', 'public')
 
-
-// CODE HERE
-
+router.get('/', (request, response) => {
+    response.sendFile('index.html', { root })
+})
+router.get('/event/:eventId', (request, response) => {
+    response.sendFile('event.html', { root })
+})
+router.get('/admin', (request, response) => {
+    response.sendFile('admin.html', { root })
+})
 
 module.exports = router
